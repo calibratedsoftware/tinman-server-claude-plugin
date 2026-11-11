@@ -1,7 +1,6 @@
-[README.md](https://github.com/user-attachments/files/27655841/README.md)
-# Claude Cowork Plugin for Tin Man Server
+# Claude Plugin for Tin Man Server
 
-A plugin that connects [Tin Man Server](https://calibratedsoftware.com) to Claude Cowork, giving Claude direct access to professional media tools for film and video production workflows. 
+A plugin that connects [Tin Man Server](https://calibratedsoftware.com) to Claude Cowork and Claude Code, giving Claude direct access to professional media tools for film and video production workflows. 
 
 Supports Blackmagic RAW • RED RAW • ARRIRAW • Sony RAW • Apple ProRes RAW • Canon RAW • Licensed Apple ProRes and Avid DNx • MOV/MXF/MP4 formats • Image Sequences — and more.
 
@@ -14,12 +13,12 @@ The **verified copy** and **create thumbnail** tools are currently free to use w
 ## Requirements
 
 - [Tin Man Server](https://www.calibratedsoftware.com/tin-man-server/)
-- [Claude Cowork](https://claude.ai) desktop app
+- [Claude](https://claude.ai) (Cowork or Claude Code)
 
 ## Installation
 
 1. Download the `.zip` for your platform from [Releases](../../releases/latest).
-2. Add the plugin to Claude Cowork.
+2. Add the plugin to Claude Cowork or Claude Code.
 
 ## Tools
 
@@ -31,7 +30,7 @@ The **verified copy** and **create thumbnail** tools are currently free to use w
 
 **tinman-server:thumbnail** — Generate JPEG thumbnails from media files. Configurable size, quality, number per clip, and Rec 709 tonemapping.
 
-**tinman-server:export** — Transcode/convert media using 50+ professional presets. ProRes, DNxHD, DNxHR, H.264, H.265, and more. Custom file naming with tokens. Preset overrides for resolution (half, quarter, eighth, max-width, fixed-size), bitrate (H.264/H.265), output colorspace (Rec 709, Rec 709 with tonemapping), and source resizing. Timecode burn-in and metadata burn-in (JSON config supported). GPU export engine support.
+**tinman-server:export** — Transcode/convert media using 50+ professional presets. ProRes, DNxHD, DNxHR, H.264, H.265, and more. Custom file naming with tokens. Preset overrides for resolution (half, quarter, eighth, max-width, fixed-size), bitrate (H.264/H.265), output colorspace (Rec 709, Rec 709 with tonemapping), and source resizing. GPU export engine support.
 
 **tinman-server:copy** — Verified file copy. Every file checksummed after copy to guarantee integrity.
 
@@ -40,28 +39,6 @@ The **verified copy** and **create thumbnail** tools are currently free to use w
 **tinman-server:generate_config** — Returns the default report configuration template as JSON for customizing reports.
 
 **tinman-server:list_export_presets** — Lists all 50+ available transcode presets.
-
-## Other MCP Clients
-
-To connect Tin Man Server to any MCP-compatible client (Cursor, VS Code, etc.), add the following entry to your client's MCP configuration file.
-
-**Windows:**
-
-```json
-"tinman-server": {
-  "command": "C:\\Program Files\\Calibrated Software\\Tin Man\\python\\python.exe",
-  "args": ["C:\\Program Files\\Calibrated Software\\Tin Man\\Server\\tinman_server_mcp.cpython-310.pyc"]
-}
-```
-
-**macOS:**
-
-```json
-"tinman-server": {
-  "command": "/Applications/Calibrated Tin Man.app/Contents/PlugIns/Frameworks/Python.framework/Versions/3.10/bin/python3",
-  "args": ["/Applications/Calibrated Tin Man.app/Contents/Server/tinman_server_mcp.cpython-310.pyc"]
-}
-```
 
 ## General Options
 
@@ -92,3 +69,4 @@ The plugin also includes built-in knowledge that helps Claude understand profess
 - [Tin Man Server](https://www.calibratedsoftware.com/tin-man-server/)
 - [Tin Man Server User Guide](https://docs.calibratedsoftware.com/tin-man/getting-started-server)
 - [Calibrated Software](https://www.calibratedsoftware.com)
+
