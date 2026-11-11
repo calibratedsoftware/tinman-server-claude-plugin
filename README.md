@@ -1,6 +1,6 @@
 # Claude Plugin for Tin Man Server
 
-A plugin that connects [Tin Man Server](https://calibratedsoftware.com) to Claude Cowork and Claude Code, giving Claude direct access to professional media tools for film and video production workflows. 
+A plugin that connects [Tin Man Server](https://calibratedsoftware.com) to Claude and Claude Code, giving Claude direct access to professional media tools for film and video production workflows. 
 
 Supports Blackmagic RAW • RED RAW • ARRIRAW • Sony RAW • Apple ProRes RAW • Canon RAW • Licensed Apple ProRes and Avid DNx • MOV/MXF/MP4 formats • Image Sequences — and more.
 
