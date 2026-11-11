@@ -13,7 +13,7 @@ The **verified copy** and **create thumbnail** tools are currently free to use w
 ## Requirements
 
 - [Tin Man Server](https://www.calibratedsoftware.com/tin-man-server/)
-- [Claude](https://claude.ai) (Cowork or Claude Code)
+- [Claude](https://claude.ai) (Claude or Claude Code)
 
 ## Installation
 
