@@ -12,13 +12,13 @@ The **verified copy** and **create thumbnail** tools are currently free to use w
 
 ## Requirements
 
-- [Tin Man Server](https://www.calibratedsoftware.com/tin-man-server/)
+- [Tin Man Server](https://www.calibratedsoftware.com/tin-man-server/) 26.11.5 or later. With an earlier Tin Man, use the plugin release with the same version.
 - [Claude](https://claude.ai) (Claude or Claude Code)
 
 ## Installation
 
 1. Download the `.zip` for your platform from [Releases](../../releases/latest).
-2. Add the plugin to Claude Cowork or Claude Code.
+2. Add the plugin to Claude or Claude Code.
 
 ## Tools
 
@@ -39,6 +39,16 @@ The **verified copy** and **create thumbnail** tools are currently free to use w
 **tinman-server:generate_config** — Returns the default report configuration template as JSON for customizing reports.
 
 **tinman-server:list_export_presets** — Lists all 50+ available transcode presets.
+
+**tinman-server:validate_file_list** — Checks a JSON file list before it runs: every key and value, and that each path is there.
+
+**tinman-server:file_list_help** — Returns the JSON file list reference: every key, value and color space name.
+
+## JSON File Lists
+
+scan, query_metadata, generate_report, thumbnail, export and copy also take a JSON file list (`file_list`) that gives each folder or clip its own settings in one run: in/out points, export folder and file name, source color space and range, pixel aspect, field order, time base and timecode, rotation and flips, color correction, pre and post CC 3D LUTs, Look with tone mapping, crop and scale, metadata, and audio sync (external audio such as WAV, synced onto video by timecode, in point or out point). copy uses only the list's paths.
+
+Ask Claude for per-clip settings and it builds the list, checks it with validate_file_list, and runs it. A setting a clip can't take is reported, and the rest of the list still runs.
 
 ## General Options
 
@@ -69,4 +79,3 @@ The plugin also includes built-in knowledge that helps Claude understand profess
 - [Tin Man Server](https://www.calibratedsoftware.com/tin-man-server/)
 - [Tin Man Server User Guide](https://docs.calibratedsoftware.com/tin-man/getting-started-server)
 - [Calibrated Software](https://www.calibratedsoftware.com)
-
